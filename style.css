@@ -21,3 +21,22 @@ body {
     height: 100%;
     width: 100%;
 }
+
+#r3 {
+    position: relative;
+    z-index: 2;
+}
+
+#disco-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  pointer-events: none;
+  z-index: 999;
+  opacity: 0.4;
+  background-color: red;
+  transition: background-color 0.2s;
+  z-index: 5;
+}
