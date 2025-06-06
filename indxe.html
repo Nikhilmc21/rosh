@@ -7,7 +7,6 @@
     <title>Document</title>
 </head>
 <body>
-    <div id="disco-overlay" style="display: none;"></div>
     <h1>Roshan is my fav person</h1>
     <div class = "flexer">
         <img src = "roshan.png" class = "roshni" id="r1">
@@ -20,7 +19,7 @@
     <audio id="intro-audio" src="music.mp3"></audio>
     <script>
         function playSong() {
-            document.body.innerHTML = `<div id="disco-overlay"></div> <img src = "roshni3.jpg" class = "roshni" id="r3" style="width: 100%; height: 100%;">     <audio id="intro-audio" src="music.mp3"></audio>`;
+            document.body.innerHTML = `<div class="disco-overlay"></div> <img src = "roshni3.jpg" class = "roshni" id="r3" style="width: 100%; height: 100%;">     <audio id="intro-audio" src="music.mp3"></audio>`;
             document.getElementById('intro-audio').play()
             const overlay = document.getElementById('disco-overlay');
               
