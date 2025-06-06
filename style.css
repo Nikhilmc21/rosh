@@ -27,7 +27,7 @@ body {
     z-index: 2;
 }
 
-#disco-overlay {
+.disco-overlay {
   position: fixed;
   top: 0;
   left: 0;
