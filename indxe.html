@@ -21,7 +21,7 @@
         function playSong() {
             document.body.innerHTML = `<div class="disco-overlay"></div> <img src = "roshni3.jpg" class = "roshni" id="r3" style="width: 100%; height: 100%;">     <audio id="intro-audio" src="music.mp3"></audio>`;
             document.getElementById('intro-audio').play()
-            const overlay = document.getElementById('disco-overlay');
+            const overlay = document.querySelector('.disco-overlay');
               
             overlay.style.display = 'block';
             const colors = ['red', 'blue', 'green', 'yellow', 'magenta', 'cyan', 'orange', 'purple'];
