@@ -9,13 +9,19 @@
 <body>
     <h1>Roshan is my fav person</h1>
     <div class = "flexer">
-        <img src = "roshan.png" class = "roshni">
-        <img src = "roshan2.jpg" class = "roshni">
-        <img src = "roshni3.jpg" class = "roshni">
+        <img src = "roshan.png" class = "roshni" id="r1">
+        <img src = "roshan2.jpg" class = "roshni" id="r2">
+        <img src = "roshni3.jpg" class = "roshni" id="r3">
         <p>I wish roshan looked at me like that too</p>
-        <button onclick="document.getElementById('intro-audio').play()">Theme song</button>
+        <button onclick="playSong()">Theme song</button>
     </div>
     <p>You shouldnt sacrifice me for roshan</p>
     <audio id="intro-audio" src="music.mp3"></audio>
+    <script>
+        function playSong() {
+            document.body.innerHTML = `<img src = "roshni3.jpg" class = "roshni" id="r3">     <audio id="intro-audio" src="music.mp3"></audio>`;
+            document.getElementById('intro-audio').play()
+        }
+    </script>
 </body>
 </html>
